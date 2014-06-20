@@ -1,0 +1,131 @@
+%-----------------------------------------------------------------------
+%
+%   UFRJ  - Universidade Federal do Rio de Janeiro
+%   COPPE - Coordenação dos Programas de Pós-graduação em Engenharia
+%   PEE   - Programa de Engenharia Elétrica
+%
+%
+%   Projeto ROSA - Robô para operação de stoplogs alagados
+%
+%   Relatório quadrimestral #1
+%   Período: Out/2013 a Fev/2014
+%
+%                                                        20/mar/14, Rio
+%                                                        Ramon R. Costa
+%----------------------------------------------------------------------
+\documentclass[a4paper,11pt,oneside,openany,brazilian,version=last,draft=false]{article}
+\usepackage{../macros/mybook}
+\usepackage{amsmath,amssymb}  %pacotes do AMS
+%\usepackage[latin1]{inputenc} %pacote para entender palavras acentuadas
+\usepackage{latexsym}         %pacote para incluir simbolos (ex.\Box)
+\usepackage{fancybox,fancyhdr}%pacote com frescuras
+\usepackage{graphicx}         %pacote para incluir figuras tipo eps
+\usepackage{xcolor}
+\usepackage{xspace}
+\usepackage{pst-all,pst-poly}  %PSTricks
+\usepackage{psfrag}
+\usepackage{calc}
+\usepackage{multicol}
+%\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{geometry}
+
+\input{../macros/commands}
+\input{../macros/a4size}
+
+\input{../macros/macros-ROSA}
+
+\begin{document}
+%---------------------------------------------------------------------
+\pagestyle{fancy}%
+\thispagestyle{fancy}%
+\renewcommand{\headrulewidth}  {0.4pt}%
+\renewcommand{\footrulewidth}  {0.4pt}%
+\lhead{\vspace*{-5mm}\includegraphics[width=30mm]{../logo/lead-logo.jpg}}%
+\chead{}%
+\rhead{}%
+\lfoot{}%
+\cfoot{}%
+\rfoot{\today}%
+%---------------------------------------------------------------------
+\vspace*{20mm}%
+
+{\grande \textcolor{gray}{Financiamento}}
+
+\vspace{-15mm}%
+\hspace{50mm}%
+\includegraphics[width=50mm]{../logo/esbr-logo.png}
+\hspace{10mm}%
+\includegraphics[width=40mm]{../logo/aneel-logo.jpg}
+
+\vspace{35mm}%
+{\grande \textcolor{gray}{Execução}}
+
+\vspace{-25mm}%
+\hspace{50mm}%
+\includegraphics[width=50mm]{../logo/gscar-logo.png}
+\hspace{10mm}%
+\includegraphics[width=40mm]{../logo/coppetec50-logo.jpg}
+
+\vfill%
+\begin{center}
+  {\GRANDE \raisebox{1.4ex}{\textcolor{gray}{Projeto}} \includegraphics[width=70mm]{../logo/logo_land_ROSA.jpg}} \\[10mm]
+  {\Grande Robô para operação de stoplogs alagados} \\[25mm]
+  {\Grande Relatório quadrimestral \#1} \\[5mm]
+  {\Grande Período: Out/2013 a Fev/2014} \\
+  \vfill%
+  %{\Large Fevereiro de 2014} \\[8mm]
+\end{center}
+
+\newpage%
+%---------------------------------------------------------------------
+\pagestyle{fancy}%
+\renewcommand{\headrulewidth}  {0.4pt}
+\renewcommand{\footrulewidth}  {0.4pt}
+\lhead{\vspace*{-6mm}\includegraphics[width=30mm]{../logo/lead-logo.jpg}}%
+\chead{\vspace*{-6mm}\raisebox{1.7ex}{\textcolor{gray}{Projeto}} \includegraphics[width=30mm]{../logo/logo_land_ROSA.jpg}}%
+\rhead{\sf\thepage}%
+\lfoot{Relatório quadrimestral \#1}%
+\cfoot{}%
+\rfoot{\sf [\hours] \quad \today}%
+%---------------------------------------------------------------------
+
+\tableofcontents
+
+\newpage%
+%---------------------------------------------------------------------
+\section{Identificação}
+
+\input{../identificacao/identificacao}
+
+\newpage%
+%---------------------------------------------------------------------
+\section{Equipe executora}
+
+\input{../equipe/equipe}
+
+%---------------------------------------------------------------------
+\include{01_Cronograma}
+\include{02_Financeiro}
+\include{03_Calculos_Modelagens}
+\include{04_Resultados_Alcancados}
+\include{05_Metodologia}
+\include{06_Reunioes}
+\include{07_Viagens}
+\include{08_Outros}
+\include{Anexo_I}
+
+%\newpage%
+%---------------------------------------------------------------------
+%%% \section{Minutas}
+%%%
+%%% \input{../minutas/minuta-de-reuniao(25-out-2013)} \newpage%
+%%% \input{../minutas/minuta-de-reuniao(01-nov-2013)} \newpage%
+
+%---------------------------------------------------------------------
+\fim
+
+%---------------------------------------------------------------------
+\end{document}
